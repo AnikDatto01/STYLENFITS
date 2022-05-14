@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+selection {
+    background: #e8e8e8;
+}
+body {
+    color: #161529;
+}
+.preloader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+.preloader:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 2px solid #af2232;
+    border-left: 2px solid #af2232;
+    border-right: 2px solid #af2232;
+    border-bottom: 2px solid transparent;
+    -webkit-animation: 0.8s rotate infinite linear normal;
+    animation: 0.8s rotate infinite linear normal;
+}
+.header-sticky {
+    position: fixed;
+    top: 100px;
+    -webkit-transform: translateY(-100px) !important;
+    -ms-transform: translateY(-100px) !important;
+    transform: translateY(-100px) !important;
+    will-change: transform;
+}
+.header-dark {
+    background: #161529;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 80px;
+    z-index: 2;
+    -webkit-transition: 0.4s top, 0.4s background;
+    transition: 0.4s top, 0.4s background;
+    white-space: nowrap;
+}
+
+header, section {
+    width: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.wrapper-content {
+    position: relative;
+    left: 0;
+    -webkit-transition: 0.4s left cubic-bezier(1, 0, 0.95, 1);
+    transition: 0.4s left cubic-bezier(1, 0, 0.95, 1);
+}
+.s-main {
+    position: relative;
+    height: 990px;
+    height: 100vh;
+    overflow: hidden;
+}
+.pro-items {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.pro-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: 0.45s opacity;
+    transition: 0.45s opacity;
+}
+.main-1-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.parallax-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #161529;
+}
+ .pro-item_active {
+    z-index: 1;
+    opacity: 1;
+}
+.pro-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: 0.45s opacity;
+    transition: 0.45s opacity;
+}
+.main-1-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.parallax-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #161529;
+}
+.main-1-item .container {
+    width: 90%;
+    top: 35%;
+}
+.container {
+    position: relative;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pro-item__timeline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #af2232;
+}
+.pro-item__timeline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #af2232;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
